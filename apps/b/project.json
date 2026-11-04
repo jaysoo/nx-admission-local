@@ -1,0 +1,1 @@
+{ "name": "b", "targets": { "build": { "command": "echo build b" } } }

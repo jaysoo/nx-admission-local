@@ -1,0 +1,1 @@
+{ "name": "nx-admission-local", "private": true, "devDependencies": { "nx": "24.0.4", "nx-cloud": "19.1.5" } }
