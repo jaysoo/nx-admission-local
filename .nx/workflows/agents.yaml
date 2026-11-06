@@ -10,3 +10,14 @@ launch-templates:
         uses: 'nrwl/nx-cloud-workflows/v5/workflow-steps/checkout/main.yaml'
       - name: Install Node Modules
         uses: 'nrwl/nx-cloud-workflows/v5/workflow-steps/install-node-modules/main.yaml'
+  local2:
+    env:
+      NX_VERBOSE_LOGGING: 'true'
+      NX_CLOUD_VERBOSE_LOGGING: 'true'
+    resource-class: docker_linux_arm64/medium
+    image: ubuntu22.04-node20.19-v3
+    init-steps:
+      - name: Checkout
+        uses: 'nrwl/nx-cloud-workflows/v5/workflow-steps/checkout/main.yaml'
+      - name: Install Node Modules
+        uses: 'nrwl/nx-cloud-workflows/v5/workflow-steps/install-node-modules/main.yaml'
