@@ -1,5 +1,8 @@
 launch-templates:
   local:
+    env:
+      NX_VERBOSE_LOGGING: 'true'
+      NX_CLOUD_VERBOSE_LOGGING: 'true'
     resource-class: docker_linux_arm64/medium
     image: ubuntu22.04-node20.19-v3
     init-steps:
