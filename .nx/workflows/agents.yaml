@@ -1,7 +1,7 @@
 launch-templates:
   local:
-    resource-class: docker_linux_amd64/small
-    image: ubuntu22.04-node20.11-v1
+    resource-class: docker_linux_arm64/medium
+    image: ubuntu22.04-node20.19-v3
     init-steps:
       - name: Print node version
         script: node --version
