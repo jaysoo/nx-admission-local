@@ -3,7 +3,7 @@ launch-templates:
     resource-class: docker_linux_arm64/medium
     image: ubuntu22.04-node20.19-v3
     init-steps:
-      - name: Print node version
-        script: node --version
-      - name: Print nx version
-        script: npx nx --version
+      - name: Checkout
+        uses: 'nrwl/nx-cloud-workflows/v5/workflow-steps/checkout/main.yaml'
+      - name: Install Node Modules
+        uses: 'nrwl/nx-cloud-workflows/v5/workflow-steps/install-node-modules/main.yaml'
