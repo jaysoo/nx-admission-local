@@ -1,0 +1,1 @@
+{ "name": "d", "targets": { "build": { "command": "sleep 6 && echo build d" } } }
