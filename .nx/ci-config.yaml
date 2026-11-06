@@ -1,2 +1,2 @@
 dte:
-  distribute-on: 2147483647 local; 1 local2
+  distribute-on: 3 local
